@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HYBOSO STUDIOS</title>
+    <link rel="icon" type="image/x-icon " href="HYBOSO.png"width="350" height="355">
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    gap: 10px;
+    background-color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333333;
+}
+
+
+h1 {
+    font-size: 2.5em;
+    animation: slideInDown 0.8s ease-out;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+h3 {
+    font-size: 1.1em;
+    animation: fadeInUp 1s ease-out;
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 1.4em;
+    animation: fadeInUp 1.2s ease-out;
+    font-weight: 300;
+}
+
+
+img {
+    animation: fadeInScale 1.5s ease-out;
+    transition: transform 0.3s ease-out;
+    cursor: pointer;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s ease;
+}
+
+
+a[href*="patreon"] {
+    display: inline-block;
+    animation: fadeInScale 1.5s ease-out;
+}
+
+    .social-links {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    animation: slideInLeft 1s ease-out 0.5s both;
+}
+
+.social-links h3 {
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle;
+    animation: none;
+}
+
+.social-links a {
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 15px;
+    vertical-align: middle;
+    animation: fadeInLeft 1s ease-out 0.7s both;
+    position: relative;
+}
+
+.social-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0%;
+    height: 1px;
+    background-color: black;
+    transition: width 0.3s ease;
+}
+
+.social-links a:hover::after {
+    width: 100%;
+}
+
+.social-links a:hover h3 {
+    transform: translateY(-2px);
+    transition: transform 0.3s ease;
+}
+
+
+@keyframes slideInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+img:hover {
+    animation: float 2s ease-in-out infinite;
+}
+</style>
+</head>
+<body>
+    <h1><b>HYBOSO STUDIOS FUNDS</b></h1>
+    <h2><b>JOIN MY PATREON TO SUPPORT MY WORK AND MY MULTI BILLION DOLLAR COMPANY DREAM</b></h2>
+    <h2><b>CLICK ON THE PENGUIN TO SUPPORT MY WORKS</b></h2>
+
+    <a href="https://www.patreon.com/c/hyboso_studios/membership">
+        <img src="HYBOSO.png" width="350" height="355" alt="HYBOSO">
+    </a>
+    
+    <div class="social-links">
+        <a href="https://www.youtube.com/@HYBOSO"><h3>.YOUTUBE.</h3></a>
+        <a href="https://discord.gg/pjWPptXXW"><h3>.DISCORD.</h3></a>
+    </div>
+</body>
+</html>
